@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  transition: opacity 0.5s ease;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 60%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  transition: 0.5s;
+}
+
+.content {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  width: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dish-main {
+  display: flex;
+  justify-content: center;
+}
+
+.dishesss {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+}
+
+.dishy {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bobo {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.main-gallery {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.adress {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.logo-box {
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.logo-box img {
+  width: 100%;
+  height: 100%;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background: url(images/backgrounddd.jpeg) center center/cover no-repeat;
+}
+
+#about {
+  background: white;
+  width: 100%;
+  height: 100vh;
+}
+
+#offers {
+  background: #123;
+  width: 100%;
+  padding: 50px 0;
+}
+
+#menu {
+  padding: 20px 0;
+  background: white;
+  width: 100%;
+}
+
+#times {
+  background: url(yellowbg.jpeg);
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#gallery {
+  width: 100%;
+  padding: 50px 0;
+  background: #123;
+}
+
+#contact {
+  width: 100%;
+  padding: 50px 10%;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+#copyrights {
+  width: 100%;
+  background: #123;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav ul li a:hover {
+  text-decoration: underline 2px gold;
+}
+
+.content h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.content h2 span {
+  color: darkred;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid gold;
+  padding: 0 5px;
+}
+
+.content p {
+  padding: 10px;
+  margin: 10px 0;
+  color: white;
+}
+
+.content button {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 20px;
+  background: none;
+  border: 3px solid white;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.content button:hover {
+  background: gold;
+  color: black;
+  border: 3px solid black;
+}
+
+#about .title {
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+#about .title h2 {
+  color: darkred;
+  font-size: 50px;
+}
+
+#about .title p {
+  font-size: 20px;
+}
+
+#about .about-det {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+#about .about-det .details p {
+  font-size: 18px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+#about .about-det .details button {
+  font-size: 15px;
+  width: 150px;
+  height: 50px;
+  margin: 20px 0;
+  background: #123;
+  border: 3px solid gold;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+#about .about-det .details button:hover {
+  background: none;
+  color: #123;
+  border: 3px solid #123;
+}
+
+#about .about-det img {
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+#offers .special-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#offers .special-title h2 {
+  color: gold;
+  font-size: 30px;
+}
+
+#offers .special-title p {
+  font-size: 15px;
+  color: white;
+}
+
+#offers .dishes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#offers .dishes .dish {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+
+#offers .dishes .dish img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#offers .dishes .dish h3 {
+  font-size: 20px;
+  color: white;
+  margin: 10px 0;
+}
+
+#offers .dishes .dish p {
+  font-size: 15px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+}
+
+#offers .dishes .dish p .discount {
+  text-decoration: line-through;
+  color: ghostwhite;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#offers .dishes .dish .price .no-dis {
+  color: gold;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+#menu .menu-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#menu .menu-title h2 {
+  color: darkred;
+  font-size: 30px;
+}
+
+#menu .menu-title p {
+  font-size: 15px;
+  color: black;
+}
+
+.dishy img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.dishy h3 {
+  margin: 10px 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.money {
+  background-color: darkred;
+  color: gold;
+  font-size: 16px;
+  padding: 2px 8px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+#menu button {
+  font-size: 15px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background: gold;
+  border: 3px solid #123;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+}
+
+#menu button:hover {
+  background: none;
+  color: #123;
+  border: 3px solid #123;
+}
+
+#times div {
+  text-align: center;
+  margin: 20px;
+}
+
+#times div img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#times div h3 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+#times div h5 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+#gallery h2 {
+  font-size: 60px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+#gallery .g1,
+#gallery .g2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+#gallery div img {
+  width: 200px;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+#gallery div img:hover {
+  border: 5px solid gold;
+}
+
+.adress div {
+  flex: 1;
+  min-width: 300px;
+}
+
+.adress h3 {
+  margin: 20px 0 10px;
+  color: #333;
+  font-size: 24px;
+}
+
+.adress p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+#copyrights p {
+  color: white;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets and small laptops */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  nav {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .content {
+    padding: 50px 20px;
+    height: auto;
+  }
+
+  .content h2 {
+    font-size: 32px;
+  }
+
+  #about {
+    width: 100%;
+    padding: 30px 0;
+  }
+
+  .about-det {
+    flex-direction: column;
+  }
+
+  .details {
+    width: 90%;
+    text-align: center;
+  }
+
+  #about .about-det img {
+    width: 100%;
+    height: auto;
+  }
+
+  #offers .dishes {
+    flex-wrap: wrap;
+  }
+
+  #offers .dishes .dish {
+    width: 45%;
+  }
+
+  .dishesss {
+    width: 90%;
+  }
+
+  .dishy {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #times div {
+    width: 45%;
+  }
+
+  .main-gallery {
+    width: 90%;
+  }
+
+  .adress {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 768px) {
+  .logo-box {
+    width: 80px;
+    height: 80px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .content h2 {
+    font-size: 28px;
+  }
+
+  .content button {
+    font-size: 16px;
+  }
+
+  #about .title h2 {
+    font-size: 24px;
+  }
+
+  #about .title p {
+    font-size: 16px;
+  }
+
+  #about .about-det .details p {
+    font-size: 16px;
+  }
+
+  #offers .dishes .dish {
+    width: 90%;
+  }
+
+  #menu .menu-title h2 {
+    font-size: 24px;
+  }
+
+  #times {
+    flex-direction: column;
+  }
+
+  #times div {
+    width: 90%;
+  }
+
+  #gallery h2 {
+    font-size: 32px;
+  }
+
+  #gallery div img {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .content h2 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .money {
+    font-size: 14px;
+  }
+
+  #times div img {
+    width: 150px;
+    height: 150px;
+  }
+}
